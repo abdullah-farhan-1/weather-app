@@ -3,8 +3,8 @@
 cities_array=(Lahore Skardu "Arang Kel" Peshawar Karachi) #Customize this line only as per your need. Add "" with city names having whitespaces in them
 
 
-basedir="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app" 
-logs="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/logs.txt"
+basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+logs="$basedir/logs.txt"
 
 date=$(date +"%I:%M:%S%p %d-%b-%Y") # 10:03:26PM 24-Oct-2026
 
