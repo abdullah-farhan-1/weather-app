@@ -68,7 +68,7 @@ fi
 
 # Checks if cities_array is empty. Creates an empty .csv with header per city
 
-if [[ "${#cities_array[@]}" > 0 ]]; then
+if (( "${#cities_array[@]}" > 0 )); then
     for city in "${cities_array[@]}"; do 
         mkdir -p "$basedir/output/${city}"
         dir="$basedir/output/${city}"
