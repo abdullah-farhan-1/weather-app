@@ -3,8 +3,9 @@
 
 # Paths setup
 
-output_dir="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/output"
-logs="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/logs.txt"
+basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+output_dir="$basedir/output"
+logs="$basedir/logs.txt"
 
 
 
