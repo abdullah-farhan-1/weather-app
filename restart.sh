@@ -3,9 +3,10 @@
 #Deletes the logs.txt file as well as output and backups directories
 
 
-output="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/output"
-logs="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/logs.txt"
-backups="/home/abdullah/Desktop/Data Engineering/7. Hands-on Introduction to Linux Commands and Shell Scripting/weather-app/backups"
+basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+output="$basedir/output"
+logs="$basedir/logs.txt"
+backups="$basedir/backups"
 
 
 if [[ -d "$output" ]]; then
